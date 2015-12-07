@@ -1,0 +1,51 @@
+
+ /*
+     Index.css
+ */
+ 
+ html {
+      font-size: 24px;
+ }
+ 
+ h2 {
+     padding: 5%;
+ }
+
+ #topBit {
+     text-align: center;
+ }
+ 
+ input[type=text] {
+      position: relative;
+      width: 200px;
+	  margin-left: 10%;
+ }
+ 
+ #bottom  {
+	height: 100px;
+ }
+ 
+ #theForm {
+     position: relative;
+	 margin-top: 5%;
+ }
+ 
+ #btnCalc {
+     position: relative;
+	 margin-left: 10%;
+	 margin-top: 2%;
+ }
+ 
+ #lblResult {
+     position: relative;
+	 margin-left: 15%;
+	 padding: 5%;
+     font-size: 2em;	 
+ }
+ 
+ 
+ .form {
+      padding-left: 10%;
+  }
+  
+  
