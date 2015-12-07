@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+ <html>
+  <head>
+   <title>Break Even JavaScript Calculator</title>
+   <meta charset="UTF-8" />
+   <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+   <link rel="stylesheet" type="text/css" href="index.css" />
+   <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+   <script src="breakeven.js"></script>
+  </head>
+  <body>
+   <div id="topBit" class="nav navbar-default">
+     <h1><a>The Break-Even Calculator</a></h1>
+	 <h2>Calculates how many products you need to break even based on your survival budget.</h2>
+   </div>
+   <div id="contents" class="jumbotron">
+		<div id="theForm" class="container">
+           <p class="form">
+	         Your Surival Budget: 
+	       </p>
+	       <input type="text" id="txtSurvival" name="txtSurvival" />
+            <p class="form">
+	            Cost of Your Product: 
+	        </p>
+	        <input type="text" id="txtProduct" name="txtProduct" />
+	        <br/>
+	         <button id="btnCalc" class="btn btn-primary">Calculate</button>
+	    </div>
+		<label id="lblResult">{ Result goes here }</label>
+   </div>
+   <footer id="bottom" class="footer">
+      <div class="container">
+	        <label>NOTE: </label><p>This is just a personal project and not to be taken too seriously.</p>
+	  </div>
+   </footer>
+   <script>
+      $(document).ready(function() {
+	       $("#btnCalc").click(function(){
+		        var nums = getNumbers();
+				var result = calc(nums);
+				    output(result);
+		   });
+	  })();
+   </script>
+  </body>
+ </html>
